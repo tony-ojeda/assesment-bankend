@@ -9,9 +9,8 @@ async function createUser(){
         const values = await Promise.all([
             new User({
                 username: "admin", 
-                password: "admin123",
+                password: "Admin123",
                 email: "admin@gmail.com",
-                status: "active",
             }).save(),
         ]);
 

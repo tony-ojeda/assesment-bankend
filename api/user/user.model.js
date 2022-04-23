@@ -17,12 +17,6 @@ const UserSchema = new mongoose.Schema(
       required: true,
       trim: true
     },
-    status: {
-      type: String,
-      default: 'pending',
-      enum: ['deleted', 'active', 'pending'],
-      required: true
-    },
   },
   {
     timestamps: true

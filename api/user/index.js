@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const { body, validationResult } = require('express-validator');
+const { body } = require('express-validator');
 const { getAllUsers, getUserById, createUser, updateUser, deleteUser} = require('./user.controller')
 const { isAuthenticated } = require('../../auth/auth.services') 
 const router = Router();
